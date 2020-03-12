@@ -13,3 +13,253 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  top: 82px;
+  width: 980px;
+  height: 100%;
+  margin: auto;
+  z-index: 1;
+}
+
+.navbar {
+  width: 980px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid cornflowerblue; */
+  border-radius: 4px;
+  display: flex;
+  align-content: center;
+  background: #808080;
+  background: linear-gradient(#707070 50%, #808080 50%);
+}
+
+.central-nav {
+  margin: 0;
+  padding: 8px 8px;
+  height: 100%;
+  display: flex;
+  width: 845px;
+  justify-content: space-around;
+  align-content: center;
+  list-style-type: none;
+}
+
+.central-nav > li {
+  margin: 0;
+  padding: 0;
+}
+
+.central-nav > .items > a {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: 800;
+}
+
+.items > a > span, .items > a > img {
+  background-position: 50% 0;
+  /* border: 1px solid black; */
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+
+#search-bar {
+  display: flex;
+  align-content: center;
+  border-radius: 10px;
+  width: 110px;
+  margin: 6px 3px 0 0;
+  background: linear-gradient(#606060, #707070);
+  /* border: 1px solid #999999; */
+  /* background-position: 50% 0; */
+}
+
+.search-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsI…44MzMsMi4yMDEsOC42MzIsMCw1LjkxNywwTDUuOTE3LDB6IiAvPgo8L2c%2BCjwvc3ZnPgo%3D);
+  z-index: 1;
+}
+
+.main-ctn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.art-ctn {
+  position: absolute;  
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+  width: 100%;
+  height: 538px;
+  
+}
+
+.text-ctn {
+  margin: 140px auto 0 auto;
+  z-index: 99;
+  width: 980px;
+}
+
+.sidebar-ctn {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 538px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.sd > img {
+  width: 364px;
+  height: 200px;
+}
+
+.sd-items {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-gap: 0;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 720px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: 400px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+.ft-ctn {
+  font-size: 10px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.ft-1 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.ft-ctn-2 {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  font-size: 10px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.usa-flag {
+  width: 11px;
+  height: 11px;
+}
+/* 
+.header {
+  border: 0.1px solid black;
+  position: relative;
+  top: 58px;
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  background: #808080;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  width: 980px;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 900px;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.central-nav > li {
+  border-right: 1px solid black;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.article {  
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 538px;
+  border: 0.1px solid black;
+}
+
+.sidebar-ctn {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 538px;
+  border: 0.1px solid blue;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sd-items {
+  display: grid;
+  grid-template-columns: repeat(4, 364px);
+  grid-template-rows: 200px;
+  justify-content: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sd {
+  width: 364px;
+}
+
+.footer {
+  border: 0.1px solid green;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+} */
