@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 
-* *:before *:after {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -19,55 +19,23 @@ a {
 }
 
 .header {
-  display: flex;
   position: relative;
   top: 82px;
   width: 980px;
-  min-width: 100px;
-  height: 100%;
   margin: auto;
+  height: 36px;
+  /* background-color: lawngreen; */
   z-index: 1;
 }
 
 .navbar {
-  width: 980px;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  /* border: 1px solid cornflowerblue; */
-  border-radius: 4px;
-  display: flex;
-  align-content: center;
   background: #808080;
-  background: linear-gradient(#707070 50%, #808080 50%);
-}
-
-.central-nav {
-  margin: 0;
-  padding: 8px 8px;
+  background: linear-gradient(#808080 50%, #707070 50%);
+  width: 100%;
   height: 100%;
+  margin: auto;
   display: flex;
-  width: 845px;
-  justify-content: space-around;
-  align-content: center;
-  list-style-type: none;
-}
-
-.central-nav > li {
-  margin: 0;
-  padding: 0;
-}
-
-.central-nav > .items > a {
-  color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  font-weight: 800;
-}
-
-.items > a > span, .items > a > img {
-  background-position: 50% 0;
-  /* border: 1px solid black; */
+  border-radius: 4px;
 }
 
 .logo {
@@ -75,33 +43,76 @@ a {
   height: 20px;
 }
 
-#search-bar {
-  display: flex;
-  align-content: center;
-  border-radius: 10px;
-  width: 110px;
-  padding: 1px 2px 0 10px;
-  margin: 6px 3px 0 0px;
-  background: linear-gradient(#606060, #707070);
-  animation-duration: 0.3s;
-  background-image: url(https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png);
-  background-repeat: no-repeat;
-  /* border: 1px solid #999999; */
-  /* background-position: 50% 0; */
+.items {
+  border-right: 1px solid #606060;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 7px 0;
 }
 
-#search-bar:focus {
+.items:hover {
+  background-color: #505050;
+  cursor: pointer;
+}
+
+.items > a {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.item1:hover {
+  border-radius: 4px;
+}
+
+.search-bar {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.input-search {
+  display: inline-block;
+  border-radius: 10px;
+  width: 100px;
+  padding: 3px 2px 0 20px;
+  margin: 6px 8px 0 0px;
+  background: linear-gradient(#606060, #707070);
+  background-repeat: no-repeat;
+}
+
+.input-search:focus {
   background: whitesmoke;
 }
 
-#search-bar:focus-within {
+.input-search:focus-within  {
+  animation-name: move;
   animation-duration: 0.3s;
+  background-color: whitesmoke;
+}
 
+@keyframes move {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 140px;
+  }
 }
+/* 
 .search-icon {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJmdWxsI…44MzMsMi4yMDEsOC42MzIsMCw1LjkxNywwTDUuOTE3LDB6IiAvPgo8L2c%2BCjwvc3ZnPgo%3D);
-  z-index: 1;
-}
+  background-image: url(https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  bottom: 17px;
+  left: 8px;
+  background-color: whitesmoke;
+  color: whitesmoke;
+} */
 
 .main-ctn {
   position: absolute;
@@ -120,7 +131,6 @@ a {
 
 .text-ctn {
   margin: 140px auto 0 auto;
-  z-index: 99;
   width: 980px;
 }
 
@@ -134,155 +144,57 @@ a {
 }
 
 .sidebar-ctn {
-  position: absolute;
-  margin: 0;
-  padding: 0;
+  position: relative;
   top: 538px;
-  width: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.sd > img {
-  width: 364px;
-  height: 200px;
-}
-
-.sd-items {
+.sidebar {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-gap: 0;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
+.sd-item2 {
+  width: 342px;
+  height: 200px;
+}
 
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
   top: 720px;
   left: 0;
   right: 0;
   width: 100%;
-  min-width: 400px;
   margin: 0 auto;
-  /* border: 1px solid black; */
   overflow: hidden;
-}
-
-.ft-ctn {
-  font-size: 10px;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 0 20px;
-  padding: 0;
+  font-size: 10px;
 }
 
 .ft-1 {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  margin: 0;
-  padding: 0;
+  margin: 0 60px;
 }
 
-.ft-ctn-2 {
+.ft-2 {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   font-size: 10px;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 0 20px;
-  padding: 0;
+  margin: 0 90px;
 }
 
 .usa-flag {
   width: 11px;
   height: 11px;
 }
-/* 
-.header {
-  border: 0.1px solid black;
-  position: relative;
-  top: 58px;
-  width: 980px;
-  height: 100%;
-  margin: 0 auto;
-  background: #808080;
-  z-index: 1;
-}
-
-.navbar {
-  display: flex;
-  width: 980px;
-  height: 100%;
-  border: 1px solid black;
-}
-
-.navbar > ul {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid black;
-  width: 900px;
-  height: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-}
-
-.central-nav > li {
-  border-right: 1px solid black;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.article {  
-  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 50% 100% no-repeat;
-  position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 538px;
-  border: 0.1px solid black;
-}
-
-.sidebar-ctn {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  top: 538px;
-  border: 0.1px solid blue;
-  padding: 0;
-  margin: 0;
-}
-
-
-.sd-items {
-  display: grid;
-  grid-template-columns: repeat(4, 364px);
-  grid-template-rows: 200px;
-  justify-content: center;
-  align-content: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.sd {
-  width: 364px;
-}
-
-.footer {
-  border: 0.1px solid green;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
