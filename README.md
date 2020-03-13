@@ -15,7 +15,7 @@ Apple Homepage Clone
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/abrormukimov/NYTarticle/c9037e202fa105c4cfe54324b229d0aaad98376f/index.html)
+[Live Demo Link](https://rawcdn.githack.com/abrormukimov/apple-page/956dd002d8e3aab528491235eccad9d78bd2ca35/index.html)
 
 ## Getting Started
 
