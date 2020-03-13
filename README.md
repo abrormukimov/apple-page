@@ -3,7 +3,7 @@
 > Apple Homepage
 
 
-![screenshot](/images/NYT.png)
+![screenshot](/images/screenshot.png)
 
 
 Apple Homepage Clone
@@ -45,7 +45,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - Github: [abrormukimov](https://github.com/abrormukimov)
 - Linkedin: [abrormukimov](https://www.linkedin.com/in/abrormukimov)
