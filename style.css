@@ -169,14 +169,37 @@ a {
 
 .sidebar {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, 360px);
   grid-gap: 0;
   margin: 0;
   padding: 0;
 }
 
+.sd-item1 {
+  background-image: url(images/side1.jpg);
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 200px;
+}
+
 .sd-item2 {
   width: 342px;
+  height: 200px;
+  background-image: url(images/side2.jpg);
+  background-repeat: no-repeat;
+}
+
+.sd-item3 {
+  background-image: url(images/side3.jpg);
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 200px;
+}
+
+.sd-item4 {
+  background-image: url(images/side4.jpg);
+  background-repeat: no-repeat;
+  width: 360px;
   height: 200px;
 }
 
